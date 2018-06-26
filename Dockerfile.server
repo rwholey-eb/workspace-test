@@ -1,0 +1,7 @@
+FROM node
+
+EXPOSE 8080
+
+WORKDIR /server
+
+CMD ["node", "server.js"]

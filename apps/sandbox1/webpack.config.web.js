@@ -34,7 +34,7 @@ const WEBPACK_DEV_SERVER = {
         // public: 'localhost:4000',
         // public: `www.evbdev.com/sockjs-node/${workspaceName}`,
         host: '0.0.0.0',
-        port: 7000,
+        port: 4000,
         stats: WEBPACK_STATS,
     },
 };

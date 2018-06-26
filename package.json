@@ -9,10 +9,12 @@
     "apps/sandbox2"
   ],
   "scripts": {
-    "start": "nodemon server",
-    "proxy": "nodemon proxy",
-    "one": "yarn workspace sandbox1 start:web -- --port 4000",
-    "two": "yarn workspace sandbox2 start:web -- --port 4001"
+    "start": "node server",
+    "proxy": "node proxy",
+    "one": "yarn workspace sandbox1 start:web",
+    "two": "yarn workspace sandbox2 start:web",
+    "compose": "docker-compose up",
+    "proxy:full": "npm-run-all --parallel one two proxy"
   },
   "devDependencies": {
     "airbnb-js-shims": "^1.3.0",

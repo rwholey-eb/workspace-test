@@ -1,0 +1,8 @@
+FROM node
+
+EXPOSE 8081
+EXPOSE 4000-4010
+
+WORKDIR /proxy
+
+CMD ["yarn", "proxy:full"]

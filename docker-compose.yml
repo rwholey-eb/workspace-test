@@ -1,0 +1,21 @@
+version: '3'
+services:
+  workspace-server:
+    image: "workspace-server"
+    build:
+      context: ./
+      dockerfile: Dockerfile.server
+    ports:
+     - "8080:8080"
+    volumes:
+     - .:/server
+  workspace-proxy:
+    image: "workspace-proxy"
+    build:
+      context: ./
+      dockerfile: Dockerfile.proxy
+    ports:
+     - "8081:8081"
+     - "4000-4010:4000-4010"
+    volumes:
+     - .:/proxy

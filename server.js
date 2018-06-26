@@ -14,6 +14,11 @@ const html = (fileName) => `
     </html>
 `;
 
+app.use('*', (req, res, next) => {
+    console.log(`[GET] ${req.originalUrl}`);
+    next();
+});
+
 app.get('/sandbox1', (req, res) => {
     res.status(200).send(html('sandbox1'));
 });
