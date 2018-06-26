@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "start": "nodemon server",
+    "proxy": "nodemon proxy",
     "one": "yarn workspace sandbox1 start:web -- --port 4000",
     "two": "yarn workspace sandbox2 start:web -- --port 4001"
   },
