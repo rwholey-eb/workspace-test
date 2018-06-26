@@ -1,0 +1,22 @@
+{
+    "name": "sandbox1",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start:web": "webpack-dev-server --config ./webpack.config.web.js --env dev",
+        "build:web": "webpack --config ./webpack.config.web.js --env production",
+        "build:node": "webpack --config ./webpack.config.node.js"
+    },
+    "devDependencies": {
+        "babel-core": "^6.24.1",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "1.1.8",
+        "babel-preset-react": "6.23.0",
+        "babel-preset-stage-3": "6.22.0",
+        "prop-types": "^15.6.0",
+        "react": "15.4.2",
+        "react-dom": "15.4.2",
+        "webpack": "^3.10.0",
+        "webpack-dev-server": "^2.11.1"
+    }
+}
